@@ -1,9 +1,13 @@
 # Simple OpenGL Setup for Visual Studio Code
 
 ```
-git clone --recursive git@github.com:lucatironi/simpleopengl.git
-cd simpleopengl
-mkdir build
+$ git clone --recursive --shallow-submodules git@github.com:lucatironi/simpleopengl.git
+$ cd cpp-gl-doublegrit
 ```
-
+## MacOSX/Linux
+```
+$ cmake -DCMAKE_BUILD_TYPE:STRING=Debug -B./build -G "Unix Makefiles"
+$ make -C ./build
+```
+## Visual Studio Code
 Menu `Tasks > Run Task` and select `cmake`. Then `Tasks > Run Build Task`.
